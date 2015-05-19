@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  padding: 20px 0;
+  text-align: center;
+  font-family: Helvetica, Arial, sans-serif;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#floater {
+  font-size: 20px;
+  position: absolute;
+  left: 100px;
+  top: 100px;
+  padding: 10px;
+  background: pink;
+  cursor: move;
+}
+#counter {
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  color: #fff;
+  background: #f00;
+}
