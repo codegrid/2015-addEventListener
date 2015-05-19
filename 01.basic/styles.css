@@ -1,0 +1,14 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  padding: 20px;
+  text-align: center;
+}
+#foo {
+  background: #3d3a40;
+  color: #ffffff;
+  margin: 0 auto;
+  padding: 30px 40px;
+}
