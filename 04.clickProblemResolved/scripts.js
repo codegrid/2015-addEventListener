@@ -14,8 +14,8 @@ var shouldStopCounter = false;
 // クリックされたらカウント増加
 
 counter.addEventListener('click', function() {
-  var current = parseInt(counter.innerHTML, 10);
-  counter.innerHTML = current + 1;
+  var current = parseInt(counter.textContent, 10);
+  counter.textContent = current + 1;
 });
 
 // mousedownでドラッグ開始
@@ -39,7 +39,7 @@ document.addEventListener('mousemove', function(e) {
 
 // mouseupでドラッグ完了
 
-floater.addEventListener('mouseup', function(e) {
+floater.addEventListener('mouseup', function() {
   whileDrag = false;
 });
 

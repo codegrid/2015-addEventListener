@@ -10,8 +10,8 @@ var whileDrag = false;
 // クリックされたらカウント増加
 
 counter.addEventListener('touchend', function() {
-  var current = parseInt(counter.innerHTML, 10);
-  counter.innerHTML = current + 1;
+  var current = parseInt(counter.textContent, 10);
+  counter.textContent = current + 1;
 });
 
 // touchstartでドラッグ開始
@@ -24,6 +24,7 @@ floater.addEventListener('touchstart', function() {
 
 document.addEventListener('touchmove', function(e) {
   if(!whileDrag) { return; }
+  e.preventDefault(); // ページごと動いちゃうのでストップ
   var touch = e.changedTouches[0];
   var x = touch.pageX;
   var y = touch.pageY;
@@ -33,7 +34,7 @@ document.addEventListener('touchmove', function(e) {
 
 // touchendでドラッグ完了
 
-floater.addEventListener('touchend', function(e) {
+floater.addEventListener('touchend', function() {
   whileDrag = false;
 });
 

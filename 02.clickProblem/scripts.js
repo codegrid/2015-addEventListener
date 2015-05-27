@@ -10,8 +10,8 @@ var whileDrag = false;
 // クリックされたらカウント増加
 
 counter.addEventListener('click', function() {
-  var current = parseInt(counter.innerHTML, 10); // 中の数字
-  counter.innerHTML = current + 1; // +1 して突っ込む
+  var current = parseInt(counter.textContent, 10); // 中の数字
+  counter.textContent = current + 1; // +1 して突っ込む
 });
 
 // mousedownでドラッグ開始

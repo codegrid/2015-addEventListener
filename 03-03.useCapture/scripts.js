@@ -10,4 +10,4 @@ div2.addEventListener('click', function() {
 }, true);
 div3.addEventListener('click', function() {
   alert('Hello! I am #div3.');
-}, true);
+});
